@@ -1,7 +1,7 @@
 
 Edevlet kullannıcı login üzerinden kullanıcı girişi yapılması ve oturum açan kullanıcının bilgilerinin alınmasını sağlayan JavaScript Uygulaması.
 
-<b><h3>EDConfiguration</h3></b>
+<b><h1>EDConfiguration</h1></b>
 
 Entegrasyon yapacak kurumun entegrasyonda kullanılacak parametrelerinin tanımlamasının yapıldığı yapıdır. Entegrasyonda kullanılan tanımlamalar aşağıdaki gibidir. 
 
@@ -11,7 +11,7 @@ Entegrasyon yapacak kurumun entegrasyonda kullanılacak parametrelerinin tanıml
   <li><b>RedirectUri : </b> Login işleminden sonra yönlendirilecek web sayfası.</li>
 </ul>
 
-<b><h3>EDFunctionResult</h3></b>
+<b><h1>EDFunctionResult</h1></b>
 
 EDevlet entegrasyonundan dönen sonucu tutulduğu yapıdır.
 
@@ -22,12 +22,12 @@ EDevlet entegrasyonundan dönen sonucu tutulduğu yapıdır.
   <li><b>AccessToken : </b> Edevlette oluşturulan AccessToken değerini tutar.</li>
 </ul>
 
-<b><h3>EDAuth</h3></b>
+<b><h1>EDAuth</h1></b>
 
 Edevlet uygulama giriş sayfasına yönlendirme ve kullanıcı oturum açımından sonra AuthorizationCode değerinin alınması işlemlerinin yapıldığı yapıdır. Bu yapıda 3 fonksiyon tanımlanmıştır. Bu fonksiyonların açıklaması aşağıdaki gibidir.
 
 
-<b><h5>RedirectForLogin</h5></b>
+<b><h3>RedirectForLogin</h3></b>
 
 Edevlet entegrasyonu için gerekli olan parametreler ile edevlet giriş sayfasına yönlendirilme işlemini yapan fonksiyondur.
 
@@ -53,13 +53,13 @@ Edevlet entegrasyonu için gerekli olan parametreler ile edevlet giriş sayfası
 </table>
 
 
-<b><h5>GetResponseAuthCode</h5></b>
+<b><h3>GetResponseAuthCode</h3></b>
 
-Edevlet tarafından kullanıcının oturum açması ile tanımlanan kurum sayfasına yönlendirme işlemi gerçekleştirilir. Yönlendirme sayfasında bu fonksiyonun çalıştırılması ile edevletin göndermiş olduğu AuthorizationCode değerini alan fonksiyondur. Parametre almaz.
+Edevlet tarafından kullanıcının oturum açması ile tanımlanan kurum sayfasına yönlendirme işlemi gerçekleştirilir. Yönlendirme sayfasında bu fonksiyonun çalıştırılması ile edevletin göndermiş olduğu AuthorizationCode değerini alan fonksiyondur. Parametre almaz. Dönüş tipi <b>EDFunctionResult</b> dir.
 
-<b><h5>GetUrlParameter</h5></b>
+<b><h3>GetUrlParameter</h3></b>
 
-Sayfadaki url parametrelerini ismine göre alan fonksiyondur.
+Sayfadaki url parametrelerini ismine göre alan fonksiyondur. Dönüş tipi <b>string</b> dir
 
 <table class="tg">
   <tr>
