@@ -1,3 +1,4 @@
+
 Edevlet kullannıcı login üzerinden kullanıcı girişi yapılması ve oturum açan kullanıcının bilgilerinin alınmasını sağlayan JavaScript Uygulaması.
 
 <b><h3>EDConfiguration</h3></b>
@@ -20,3 +21,59 @@ EDevlet entegrasyonundan dönen sonucu tutulduğu yapıdır.
   <li><b>AuthorizationCode : </b> Edevlette oluşturulan AuthorizationCode değerini tutar.</li>
   <li><b>AccessToken : </b> Edevlette oluşturulan AccessToken değerini tutar.</li>
 </ul>
+
+<b><h3>EDAuth</h3></b>
+
+Edevlet uygulama giriş sayfasına yönlendirme ve kullanıcı oturum açımından sonra AuthorizationCode değerinin alınması işlemlerinin yapıldığı yapıdır. Bu yapıda 3 fonksiyon tanımlanmıştır. Bu fonksiyonların açıklaması aşağıdaki gibidir.
+
+
+<b><h5>RedirectForLogin</h5></b>
+
+Edevlet entegrasyonu için gerekli olan parametreler ile edevlet giriş sayfasına yönlendirilme işlemini yapan fonksiyondur.
+
+<table class="tg">
+  <tr>
+    <th class="tg-7btt" colspan="3">RedirectForLogin</th>
+  </tr>
+  <tr>
+    <td class="tg-fymr">Parametreler</td>
+    <td class="tg-fymr">Parametre Tipi</td>
+    <td class="tg-7btt">Açıklama</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">State</td>
+    <td class="tg-0pky">String</td>
+    <td class="tg-0pky">Kurum uygulaması tarafından üretilen, güvenlik<br>amaçlı olarak kullanılacak, rastgele bir değerdir</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Scope</td>
+    <td class="tg-0lax">String</td>
+    <td class="tg-0lax">Uygulamanızın erişmek için izin istediği bilgi kümeleri <br>veya gerçekleştirmek istediği işlemlerin sıralandığı listesi.</td>
+  </tr>
+</table>
+
+
+<b><h5>GetResponseAuthCode</h5></b>
+
+Edevlet tarafından kullanıcının oturum açması ile tanımlanan kurum sayfasına yönlendirme işlemi gerçekleştirilir. Yönlendirme sayfasında bu fonksiyonun çalıştırılması ile edevletin göndermiş olduğu AuthorizationCode değerini alan fonksiyondur. Parametre almaz.
+
+<b><h5>GetUrlParameter</h5></b>
+
+Sayfadaki url parametrelerini ismine göre alan fonksiyondur.
+
+<table class="tg">
+  <tr>
+    <th class="tg-hgcj" colspan="3">GetUrlParameter</th>
+  </tr>
+  <tr>
+    <td class="tg-5ua9">Parametreler</td>
+    <td class="tg-5ua9">Parametre Tipi</td>
+    <td class="tg-5ua9">Açıklama</td>
+  </tr>
+  <tr>
+    <td class="tg-s268">sParam</td>
+    <td class="tg-s268">String</td>
+    <td class="tg-s268">Url'den parametre değeri alınacak anahtar değeri.</td>
+  </tr>
+</table>
+
