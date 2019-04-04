@@ -77,3 +77,12 @@ Sayfadaki url parametrelerini ismine göre alan fonksiyondur. Dönüş tipi <b>s
   </tr>
 </table>
 
+<b><h1>EDToken</h1></b>
+
+Edevletten alınan AuthorizationCode değerinin kaynak sorgulama için AccessToken değerine dönüştürülmesi işleminin yapıldığı yapıdır. bu işlemi yapan fonksiyon aşağıda tanımlanmıştır.
+
+
+<b><h3>GetAccessToken</h3></b>
+
+Edevlet üzerinden alınan AuthorizationCode değerini AccessToken'a dönüştürür parametre olarak AuthorizationCode değerini alır.  Dönüş tipi <b>EDFunctionResult</b> dir.
+
